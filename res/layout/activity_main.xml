@@ -1,12 +1,31 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:orientation="vertical">
 
     <TextView
+        android:id="@+id/sour_pic_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="原图" />
+    
+    <ImageView 
+        android:id="@+id/sour_pic"
+        android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:scaleType="centerInside"/>
+    
+    <TextView
+        android:id="@+id/watermark_pic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="水印" />
+    
+    <ImageView 
+        android:id="@+id/wartermark_pic"
+        android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:scaleType="centerInside"/>
 
-</RelativeLayout>
+</LinearLayout>
