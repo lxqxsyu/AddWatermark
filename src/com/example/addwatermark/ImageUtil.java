@@ -1,11 +1,9 @@
 package com.example.addwatermark;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Rect;
@@ -221,6 +219,7 @@ public class ImageUtil {
 				(bitmap.getWidth() - bounds.width()) / 2,  
 				(bitmap.getHeight() + bounds.height()) / 2);
 	}
+	
 	//图片上绘制文字
 	private static Bitmap drawTextToBitmap(Context context, Bitmap bitmap, String text,
 			Paint paint, Rect bounds, int paddingLeft, int paddingTop) {
